@@ -2,3 +2,21 @@
 	// max-width: 1180px;
 	padding: 52px 130px 66px 130px;
 }
+
+@media (max-width: 1199px) {
+	.header-container{
+		padding: 52px 100px 66px 100px;
+	}
+}
+
+@media (max-width: 991px) {
+	.header-container{
+		padding: 52px 50px 66px 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	.header-container{
+		padding: 32px 30px 46px 30px;
+	}
+}
