@@ -1,0 +1,27 @@
+@mixin headerText {
+	@include regular();
+	color: #fff;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+@mixin boldText {
+	@include bold();
+	color: #000;
+	font-size: 24px;
+	line-height: 29px;
+}
+
+@mixin smallText {
+	@include regular();
+	color: #000;
+	font-size: 12px;
+	line-height: 14.63px;
+}
+
+@mixin SaledBuy {
+	@include bold();
+	color: #fff;
+	font-size: 16px;
+	line-height: 19.5px;
+}

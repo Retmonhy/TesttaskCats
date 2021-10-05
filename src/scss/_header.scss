@@ -1,0 +1,50 @@
+.header{
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7) ), url(../img/header/background.png);
+	background-size: cover;
+
+	&-block{
+		display: flex;
+		align-items: center;
+	}
+	&-block_position{
+		position: relative;
+	}
+
+	&__logo{
+		display: inline-block;
+	}
+
+	&__nav{
+		margin-left: 120px;
+		.header__link
+		{
+			@include headerText();	
+			margin-right: 50px;
+		}
+	}
+
+	&__contacts{
+		text-align: right; 
+		.ourPhone{ 
+			display: block;
+			@include boldText();
+			color: #fff;
+		 }
+		.callSoon{ 
+			display: block;
+			@include headerText();
+		}
+	}
+	&__contacts_position{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+	.foundCats{
+		@include bold();
+		color: #fff;
+		font-size: 38px;
+		line-height: 46.32px;
+	}
+}

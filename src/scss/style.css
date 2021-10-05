@@ -1,0 +1,70 @@
+.header-container {
+  padding: 52px 130px 66px 130px;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../img/header/background.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/header/background.png);
+  background-size: cover;
+}
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-block_position {
+  position: relative;
+}
+.header__logo {
+  display: inline-block;
+}
+.header__nav {
+  margin-left: 120px;
+}
+.header__nav .header__link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 00;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 50px;
+}
+.header__contacts {
+  text-align: right;
+}
+.header__contacts .ourPhone {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+}
+.header__contacts .callSoon {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 00;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+}
+.header__contacts_position {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.header .foundCats {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 38px;
+  line-height: 46.32px;
+}
+
+/*# sourceMappingURL=style.css.map */
