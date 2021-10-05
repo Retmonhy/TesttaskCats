@@ -107,7 +107,11 @@
 @media (max-width: 555px) {
 	.header{
 		#bigWindow-navbar{ display: none;}
+<<<<<<< HEAD
 		#smallWindow-navbar{ display: flex; }
+=======
+		#smallWindow-navbar{ display: block; }
+>>>>>>> ab74c2cd8bd3dc4e89c25c8b430c009364fb3d94
 		&-block{ justify-content: space-between;}
 		.foundCats{ display: none;}
 		&__contacts_position{
@@ -167,7 +171,11 @@
 				@include regular();
 				color: #fff;
 				flex-basis: 25%;	
+<<<<<<< HEAD
 				padding: 7% 0;
+=======
+				padding-top: 7%;
+>>>>>>> ab74c2cd8bd3dc4e89c25c8b430c009364fb3d94
 				font-size: 24px;
 				line-height: 29px;
 				text-decoration: none;
