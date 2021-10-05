@@ -26,16 +26,28 @@
 			<div class="header__logo">
 				<img src="img/logotip_white.png" alt="logo">
 			</div>
-			<nav class="header__nav">
+			<nav id="bigWindow-navbar" class="header__nav header__nav_position">
+				<a href="#" class="header__link header__link_position">Main</a>
+				<a href="#" class="header__link header__link_position">Gallery</a>
+				<a href="#" class="header__link header__link_position">News</a>
+				<a href="#" class="header__link header__link_position">Profile</a>
+			</nav>
+			<div class="header__contacts header__contacts_position">
+				<a href="tel:+544 3490 00000" class="ourPhone">+544 3490 00000</a>
+				<span class="callSoon">Звони скорее!</span>
+			</div>
+			<div class="burger-menu burger-menu_position">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav id="smallWindow-navbar" class="header-menu header-menu_position ">
 				<a href="#" class="header__link">Main</a>
 				<a href="#" class="header__link">Gallery</a>
 				<a href="#" class="header__link">News</a>
 				<a href="#" class="header__link">Profile</a>
 			</nav>
-			<div class="header__contacts header__contacts_position">
-				<strong class="ourPhone">+544 3490 00000</strong>
-				<span class="callSoon">Звони скорее!</span>
-			</div>
+			
 		</div>
 		<p class="foundCats">Найдено 349 котов</p>
 
@@ -46,6 +58,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- <script src="js/main.js"></script>     -->
+    <script src="js/header.js"></script>    
   </body>
 </html>
