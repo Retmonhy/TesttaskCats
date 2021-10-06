@@ -1,3 +1,19 @@
 $turquoise: #6EBBD3;
 $darkColor: #1F2021;
 $redColor: #E52D2D;
+
+/* padding main-section */
+$Section-padding: 130px;
+$Section-padding_1199px: 90px;
+$Section-padding_991px: 60px;
+$Section-padding_767px: 30px;
+$Section-padding_555px: 15px;
+
+/* Голубенькая кнопочка =) */
+.turquoiseButton{
+	background-color: $turquoise;
+	color: #fff;
+	@include bold();
+	font-size: 14px;
+	line-height: 17.07px;
+}
