@@ -1,87 +1,414 @@
-/*
-Error: Invalid CSS after "				padding: 7% 0": expected "{", was ";"
-        on line 175 of C:/Users/user/Desktop/TestTaskCats)/src/scss/_header.scss
-        from line 6 of C:\Users\user\Desktop\TestTaskCats)\src\scss\style.scss
+@charset "UTF-8";
+.header-container {
+  padding: 52px 130px 66px 130px;
+}
 
-170: 				display: block;
-171: 				@include regular();
-172: 				color: #fff;
-173: 				flex-basis: 25%;	
-174: <<<<<<< HEAD
-175: 				padding: 7% 0;
-176: =======
-177: 				padding-top: 7%;
-178: >>>>>>> ab74c2cd8bd3dc4e89c25c8b430c009364fb3d94
-179: 				font-size: 24px;
-180: 				line-height: 29px;
+.main-container {
+  padding: 37px 130px 83px 130px;
+}
 
-Backtrace:
-C:/Users/user/Desktop/TestTaskCats)/src/scss/_header.scss:175
-C:\Users\user\Desktop\TestTaskCats)\src\scss\style.scss:6
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:421:in `media_directive'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-D:/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-D:/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-D:/Koala/bin/sass:22:in `load'
-D:/Koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"				padding: 7% 0\": expected \"{\", was \";\"\A         on line 175 of C:/Users/user/Desktop/TestTaskCats)/src/scss/_header.scss\A         from line 6 of C:\Users\user\Desktop\TestTaskCats)\src\scss\style.scss\A \A 170: 				display: block;\A 171: 				@include regular();\A 172: 				color: #fff;\A 173: 				flex-basis: 25%;	\A 174: <<<<<<< HEAD\A 175: 				padding: 7% 0;\A 176: =======\A 177: 				padding-top: 7%;\A 178: >>>>>>> ab74c2cd8bd3dc4e89c25c8b430c009364fb3d94\A 179: 				font-size: 24px;\A 180: 				line-height: 29px;"; }
+@media (max-width: 1199px) {
+  .header-container {
+    padding: 52px 100px 66px 100px;
+  }
+}
+@media (max-width: 991px) {
+  .header-container {
+    padding: 52px 50px 66px 50px;
+  }
+}
+@media (max-width: 767px) {
+  .header-container {
+    padding: 32px 30px 46px 30px;
+  }
+}
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../img/header/background.png) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/header/background.png) no-repeat;
+  background-size: cover;
+  background-position: 31% 0;
+  /* Выезжающее меню */
+}
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-block_position {
+  position: relative;
+  margin-bottom: 50px;
+}
+.header__logo {
+  display: inline-block;
+}
+.header__logo img {
+  width: 78px;
+  height: 78px;
+}
+.header__nav {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__nav .header__link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+}
+.header__nav .header__link:hover {
+  text-decoration: underline;
+}
+.header__nav .header__link_position {
+  margin-right: 50px;
+}
+.header__nav_position {
+  margin-left: 120px;
+}
+.header__contacts {
+  text-align: right;
+}
+.header__contacts .ourPhone {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  text-decoration: none;
+}
+.header__contacts .ourPhone:hover {
+  text-decoration: underline;
+}
+.header__contacts .callSoon {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+}
+.header__contacts_position {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.header .foundCats {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 38px;
+  line-height: 46.32px;
+}
+.header-menu {
+  display: none;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url(../img/header/background.png) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../img/header/background.png) no-repeat;
+    background-position: 30% 0;
+    background-size: cover;
+  }
+  .header__nav_position {
+    margin-left: 12%;
+  }
+  .header__nav .header__link_position {
+    margin-right: 11%;
+  }
+}
+@media (max-width: 991px) {
+  .header .foundCats {
+    font-size: 25px;
+  }
+  .header .ourPhone {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .header__nav {
+    width: 100%;
+  }
+  .header__contacts_position {
+    top: 200%;
+  }
+}
+@media (max-width: 555px) {
+  .header #bigWindow-navbar {
+    display: none;
+  }
+  .header #smallWindow-navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header #smallWindow-navbar {
+    display: block;
+  }
+  .header-block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .foundCats {
+    display: none;
+  }
+  .header__contacts_position {
+    top: 150%;
+  }
+  .header .burger-menu {
+    width: 30px;
+    height: 30px;
+  }
+  .header .burger-menu:hover {
+    cursor: pointer;
+  }
+  .header .burger-menu span {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .header .burger-menu span:first-child {
+    -webkit-transform: translate(-50%, -10px);
+            transform: translate(-50%, -10px);
+  }
+  .header .burger-menu span:last-child {
+    -webkit-transform: translate(-50%, 10px);
+            transform: translate(-50%, 10px);
+  }
+  .header .burger-menu_position {
+    position: relative;
+    z-index: 101;
+    top: 0;
+    right: 0;
+  }
+  .header .burger-menu_active span {
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .header .burger-menu_active span:nth-child(2) {
+    display: none;
+  }
+  .header .burger-menu_active span:first-child {
+    -webkit-transform: translate(-50%, 0px) rotate(45deg);
+            transform: translate(-50%, 0px) rotate(45deg);
+  }
+  .header .burger-menu_active span:last-child {
+    -webkit-transform: translate(-50%, 0px) rotate(-45deg);
+            transform: translate(-50%, 0px) rotate(-45deg);
+  }
+  .header-menu {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+  }
+  .header-menu .header__link {
+    text-align: center;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    padding: 7% 0;
+    padding-top: 7%;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+  }
+  .header-menu .header__link:hover {
+    background-color: #6EBBD3;
+  }
+  .header-menu_position {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: 100;
+    padding-top: 100px;
+  }
+  .header-menu_active {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+.main-section .sort-row .span {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #000;
+}
+.main-section .sort-row .sort__type {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  margin-left: 55px;
+}
+.main-section .sort-row .sort__type:last-child {
+  margin-left: 83px;
+}
+.main-section .sort-row .sort__type:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: transparent url(../img/main-section/sort-arrow.svg) center center no-repeat;
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+.main-section .sort-row_position {
+  margin-bottom: 38px;
+}
+.main-section .cats-shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.main-section .cats-shop .turquoiseButton {
+  background-color: #6EBBD3;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+.main-section .cats-shop .cat-block {
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+}
+.main-section .cats-shop .cat-block__image {
+  width: 100%;
+  height: 50%;
+}
+.main-section .cats-shop .cat-block__image .cat__image {
+  width: 100%;
+  height: 50%;
+}
+.main-section .cats-shop .cat-block__description {
+  background-color: #f3f3f3;
+  padding: 29px;
+}
+.main-section .cats-shop .cat-block__description .cat__name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+}
+.main-section .cats-shop .cat-block__description .cat-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 21px 0px;
+}
+.main-section .cats-shop .cat-block__description .streak__img {
+  display: inline-block;
+  width: 4px;
+  height: 26px;
+  background-color: #6EBBD3;
+}
+.main-section .cats-shop .cat-block__description .cat__span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 12px;
+  line-height: 14.63px;
+  display: inline-block;
+}
+.main-section .cats-shop .cat-block__description .cat__span strong {
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 700;
+}
+.main-section .cats-shop .cat-block__description .cat__cost {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  line-height: 29px;
+}
+.main-section .cats-shop .cat-block .cats-shop__button {
+  width: 100%;
+  height: 65px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-section .cats-shop .cat-block_position {
+  margin-bottom: 27px;
+}
+
+/*# sourceMappingURL=style.css.map */
