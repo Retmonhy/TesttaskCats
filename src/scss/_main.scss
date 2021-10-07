@@ -58,6 +58,8 @@
 				background: transparent url(../img//main-section/like.svg) center no-repeat;
 				background-size: contain;
 				border: none;
+
+				cursor: pointer;
 				opacity: 0.5;
 			}
 			.like-btn_clicked{
@@ -120,10 +122,16 @@
 				height: 65px;
 				text-align: center;
 				cursor: pointer;
+				@include SaledBuy();
 
 				border: none;
 				border-bottom-left-radius: 10px;
 				border-bottom-right-radius: 10px;
+
+				&:active {
+					transition: 0.2s;
+					font-size: 18px !important; 
+				}
 			}
 		}
 
@@ -171,6 +179,11 @@
 		@include regular();
 		font-size: 14px;
 		line-height: 65px;
+
+		&:hover{
+			transition: 0.8s;
+			background-color: lighten(#CACACA, 10%);
+		}
 	}
 	.showMore-button_position{
 		margin-top: 48px;

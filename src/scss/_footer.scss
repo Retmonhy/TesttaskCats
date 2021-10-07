@@ -1,0 +1,177 @@
+.footer{
+	background-color: $darkColor;
+	&-content{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&_offset{
+		margin-top: 83px;
+	}
+	.footer__text{
+		flex-basis: 40%;
+		color: #fff;
+	}
+	.footer__text-header{
+		margin: 0;
+		margin-bottom: 25px;
+	}
+	&-header{
+		@include bold();
+		font-size: 48px;
+		line-height: 58.5px;
+	}
+	.subscribeAndKnow{
+		@include regular();
+		font-size: 28px;
+		line-height: 25.5px;
+
+	}
+
+	&-form{
+		width: 55%;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.email-input{
+			flex-basis: 48%;
+			height: 65px;
+
+			@include regular();
+			font-size: 14px;
+			line-height: 17px;
+
+			border: none;
+			&:focus{
+				outline: none;
+			}
+			&::placeholder{
+				color: #000;
+			}
+		}
+		.form__email-input{//цвету  плейсхолдера
+			padding: 0;
+			padding-left: 33px;
+			border-radius: 10px;
+		}
+
+		.subscribe-button{
+			flex-basis: 40%;
+			height: 65px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			&:active {
+				transition: 0.2s;
+				font-size: 15px !important; 
+			}
+		}
+
+		.subscribeToNews{
+			@include regular();
+			color: #fff;
+			font-size: 14px;
+			line-height: 17px;
+
+			.checkbox-input{
+				position: absolute;
+				opacity: 0;
+				z-index: -1;
+			}
+			.checkbox-input+.checkbox-label{
+				display: inline-flex;
+				align-items: center;
+				user-select: none;
+			}
+
+			.checkbox-input+.checkbox-label::before{
+				content: '';
+				display: inline-block;
+				margin-right: 18px;
+				width: 18px;
+				height: 18px;
+				border: 2px solid #e9ecef;
+				border-radius: 3px;
+				background: #e9ecef;
+			}
+			.checkbox-input:checked+.checkbox-label::before {
+				border: 2px solid $turquoise;
+				background: $turquoise url(../img/footer/check.svg) center no-repeat; 
+			}
+			.checkbox-input:not(:disabled):not(:checked)+.checkbox-label:hover::before {
+				border-color: $turquoise;
+			}
+			.checkbox-input:not(disabled):active+.checkbox-label::before {
+				border-color: lighten($turquoise, 20%) !important; 
+				background-color: lighten($turquoise, 20%);
+			}
+			.checkbox-input:focus+.checkbox-label::before {
+			  	box-shadow: 0 0 0 3px lighten($turquoise, 20%);;
+			}
+			.checkbox-input:focus:not(:checked)+.checkbox-label::before {
+				border-color: $turquoise;
+			}
+			.checkbox-input:disabled+.checkbox-label::before {
+				border-color: $turquoise;
+			}
+
+
+		}
+		.form__subscribeToNews{
+			margin-top: 24px;
+		}
+
+	}
+}
+
+
+@media (max-width: 1350px) {
+	.footer{
+		.footer-header{
+			font-size: 40px;
+			line-height: 45px;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.footer {
+		.footer-content{
+			flex-direction: column;
+			align-items: start;
+		}
+		.footer__text{ flex-basis: 100%; }
+		.footer__text_offset { margin-bottom: 30px; }
+		.footer-form {flex-basis: 100%; width: 100%;	}
+	}
+}
+
+@media (max-width: 555px) {
+	.footer{
+		.footer-form{
+			flex-direction: column;
+			align-items: start;
+			.email-input{ 
+				flex-basis: auto; 
+				width: 80%; 
+				height: 50px; 
+				padding-left: 15px; 
+				margin-bottom: 20px;
+			} 
+			.subscribe-button{ 
+				flex-basis: auto; 
+				width: 80%;
+				height: 50px; 
+			}
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.footer .footer-form {
+		.email-input{ width: 100%; }
+		.subscribe-button { width: 100%; }
+	}
+}

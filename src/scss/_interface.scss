@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body, html{
 	padding: 0;
 	margin: 0;
@@ -15,6 +19,11 @@ body{
 		opacity: 0.9;
 		z-index: 100;
 		cursor: pointer;
+
+		&:hover{
+		background: $turquoise url(../img/main-section/scroll-arrow_white.svg) center center no-repeat;
+			
+		}
 
 
 	}
