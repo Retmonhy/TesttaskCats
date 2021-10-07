@@ -24,8 +24,57 @@ body{
 		background: $turquoise url(../img/main-section/scroll-arrow_white.svg) center center no-repeat;
 			
 		}
+	}
 
+	.favorit-notice{
+		width: 300px;
+		border: none;
+		transition: 0.3s;
+		transform: translate(-100%, 0);
 
+		.favorit-wrapper{
+			width: 100%; height: 100%;
+			border: 1px solid $turquoise;
+		}
+		.favorit-header{
+			width: 100%;	
+			border-bottom: 2px solid $turquoise;
+			background-color: $turquoise;
+			@include boldText();
+			color: #fff;
+			padding: 20px 30px;
+
+			h3{ margin: 0;}
+		}
+		.favorit-text{
+			width: 100%;
+			padding: 20px 30px;
+			@include headerText();
+			background-color: $darkColor;
+		}
+		.cat__nameHere{
+			display: block;
+			align-items: center;
+			flex-basis: 100%;
+			text-decoration: underline;
+			text-decoration-color: $turquoise;
+			font-size: 20px;
+
+			&::before{
+				content: '';
+				display: inline-block;
+				margin-right: 10px;
+				width: 15px;
+				height: 15px;
+				background: transparent url(../img/icons8-точка-в-кружке-15.png) center no-repeat;
+
+			}
+		}
+	}
+	.favorit-notice_position{
+		position: fixed;
+		top: 20%;
+		left: 0;
 	}
 }
 
@@ -54,6 +103,12 @@ body{
 		.scrollTop-button{
 			right: $Section-padding_767px;
 		}
+		.favorit-notice{
+			width: 100%;
+		}
+		.favorit-notice_position{
+			top: 0;
+		}
 	}
 }
 
@@ -63,5 +118,6 @@ body{
 		.scrollTop-button{
 			right: $Section-padding_555px;
 		}
+
 	}
 }

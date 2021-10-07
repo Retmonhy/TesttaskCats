@@ -108,7 +108,7 @@
 	.header{
 		#bigWindow-navbar{ display: none;}
 		#smallWindow-navbar{ display: flex; }
-		#smallWindow-navbar{ display: block; }
+		// #smallWindow-navbar{ display: block; }
 		&-block{ justify-content: space-between;}
 		.foundCats{ display: none;}
 		&__contacts_position{
@@ -151,7 +151,7 @@
 
 		&-menu{
 			width: 100vw;
-			height: 50vh;
+			height: 75vh;
 			background-color: rgba(0, 0, 0, .95);
 
 			display: flex;

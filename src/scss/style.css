@@ -96,6 +96,69 @@ body .scrollTop-button {
 body .scrollTop-button:hover {
   background: #6EBBD3 url(../img/main-section/scroll-arrow_white.svg) center center no-repeat;
 }
+body .favorit-notice {
+  width: 300px;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+body .favorit-notice .favorit-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #6EBBD3;
+}
+body .favorit-notice .favorit-header {
+  width: 100%;
+  border-bottom: 2px solid #6EBBD3;
+  background-color: #6EBBD3;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  padding: 20px 30px;
+}
+body .favorit-notice .favorit-header h3 {
+  margin: 0;
+}
+body .favorit-notice .favorit-text {
+  width: 100%;
+  padding: 20px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #1F2021;
+}
+body .favorit-notice .cat__nameHere {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #6EBBD3;
+          text-decoration-color: #6EBBD3;
+  font-size: 20px;
+}
+body .favorit-notice .cat__nameHere::before {
+  content: '';
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  background: transparent url(../img/icons8-точка-в-кружке-15.png) center no-repeat;
+}
+body .favorit-notice_position {
+  position: fixed;
+  top: 20%;
+  left: 0;
+}
 
 @media (max-width: 1199px) {
   body .scrollTop-button {
@@ -110,6 +173,12 @@ body .scrollTop-button:hover {
 @media (max-width: 767px) {
   body .scrollTop-button {
     right: 30px;
+  }
+  body .favorit-notice {
+    width: 100%;
+  }
+  body .favorit-notice_position {
+    top: 0;
   }
 }
 @media (max-width: 555px) {
@@ -250,9 +319,6 @@ body .scrollTop-button:hover {
     display: -ms-flexbox;
     display: flex;
   }
-  .header #smallWindow-navbar {
-    display: block;
-  }
   .header-block {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -314,7 +380,7 @@ body .scrollTop-button:hover {
   }
   .header-menu {
     width: 100vw;
-    height: 50vh;
+    height: 75vh;
     background-color: rgba(0, 0, 0, 0.95);
     display: -webkit-box;
     display: -ms-flexbox;
