@@ -46,3 +46,19 @@ function showNotice() {
 function hideNotice() {
 	$('.favorit-notice').css('transform', 'translate(-100%, 0)')
 };
+
+
+/*скрипт на кнопочку возврата к шапке*/
+$('.scrollTop-button').on('click', () => {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 1000);
+});
+
+$(window).on('scroll', function(){
+	if ($(this).scrollTop() > 300) {
+		$('.scrollTop-button').fadeIn();
+	} else {
+		$('.scrollTop-button').fadeOut();
+	}
+});

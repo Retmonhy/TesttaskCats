@@ -19,6 +19,7 @@ body{
 		opacity: 0.9;
 		z-index: 100;
 		cursor: pointer;
+		display: none;
 
 		&:hover{
 		background: $turquoise url(../img/main-section/scroll-arrow_white.svg) center center no-repeat;

@@ -92,6 +92,7 @@ body .scrollTop-button {
   opacity: 0.9;
   z-index: 100;
   cursor: pointer;
+  display: none;
 }
 body .scrollTop-button:hover {
   background: #6EBBD3 url(../img/main-section/scroll-arrow_white.svg) center center no-repeat;
