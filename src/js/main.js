@@ -62,3 +62,61 @@ $(window).on('scroll', function(){
 		$('.scrollTop-button').fadeOut();
 	}
 });
+
+
+
+/*Реализация сортировки*/
+
+
+document.querySelector('.sort__cost').addEventListener("click", function(event) {
+	event.preventDefault();
+	let sort_cost_button = document.querySelector('.sort__cost');
+	checkSortClass(sort_cost_button, 'sort__cost', 'data-cost');
+});
+
+document.querySelector('.sort__age').addEventListener("click", function(event) {
+	event.preventDefault();
+	let sort_age_button = document.querySelector('.sort__age');
+	checkSortClass(sort_age_button, 'sort__age', 'data-age');
+});
+
+function checkSortClass(sort_button, sortClass, dataAttribute) {
+	if (sort_button.classList.contains('sort_decrease')) {
+		mySortIncrease(`${dataAttribute}`);
+		$('.' + sortClass).removeClass('sort_decrease').addClass('sort_increase');
+	}	else {
+		mySortDecrease(`${dataAttribute}`);
+		$('.' + sortClass).addClass('sort_decrease').removeClass('sort_increase');
+
+	}
+};
+function mySortDecrease(dataAttribute) {
+	let catsShop = document.querySelector('.cats-shop');
+
+	for (let i = 0; i < catsShop.children.length; i++) {
+		for (let j = i; j < catsShop.children.length; j++){
+			if (+catsShop.children[i].getAttribute(`${dataAttribute}`) < +catsShop.children[j].getAttribute(`${dataAttribute}`)) {
+				replacedNode = catsShop.replaceChild(catsShop.children[j], catsShop.children[i]);
+				insertAfter(replacedNode, catsShop.children[i]);
+
+			}
+		}
+	}
+}
+function mySortIncrease(dataAttribute) {
+	let catsShop = document.querySelector('.cats-shop');
+
+	for (let i = 0; i < catsShop.children.length; i++) {
+		for (let j = i; j < catsShop.children.length; j++){
+			if (+catsShop.children[i].getAttribute(`${dataAttribute}`) > +catsShop.children[j].getAttribute(`${dataAttribute}`)) {
+				replacedNode = catsShop.replaceChild(catsShop.children[j], catsShop.children[i]);
+				insertAfter(replacedNode, catsShop.children[i]);
+
+			}
+		}
+	}
+}
+
+function insertAfter(elem, refElem) {
+	return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+}

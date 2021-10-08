@@ -31,6 +31,17 @@
 
 			}
 		}
+		.sort_decrease{
+			&:after{
+				transform: translate(0, -50%) rotate(0deg);
+
+			}
+		}.sort_increase{
+			&:after{
+				transform: translate(0, -50%) rotate(180deg);
+
+			}
+		}
 	}
 
 	.sort-row_position{
