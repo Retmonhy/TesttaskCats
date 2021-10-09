@@ -1,9 +1,11 @@
 .footer{
-	background-color: $darkColor;
+	
 	&-content{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		background-color: $darkColor;
 	}
 	&_offset{
 		margin-top: 83px;
@@ -69,9 +71,6 @@
 			padding: 0;
 			padding: 0 33px;
 			border-radius: 10px;
-			&:invalid {
-				border: 1px solid red;
-			}
 		}
 
 		.subscribe-button{
@@ -157,41 +156,61 @@
 		}
 	}
 }
-
+@media (max-width: 1050px) {
+	.footer{
+		&-form{
+			.email-input{ flex-basis: 40%; }
+			.subscribe-button{ flex-basis: 37%; }
+		}
+	}
+}
 @media (max-width: 991px) {
 	.footer {
 		.footer-content{
-			flex-direction: column;
+			flex-wrap: wrap;
 			align-items: start;
+			height: 350px;
 		}
 		.footer__text{ flex-basis: 100%; }
 		.footer__text_offset { margin-bottom: 30px; }
-		.footer-form {flex-basis: 100%; width: 100%;	}
+		.footer-form {flex-basis: 100%; width: 100%;	
+		.email-input{ flex-basis: 45%}
+		.subscribe-button{ flex-basis: 40%;}
+		}
 	}
 }
 
-@media (max-width: 555px) {
+@media (max-width: 575px) {
 	.footer{
+		.footer-content { height: 420px;}
 		.footer-form{
-			flex-direction: column;
+			/* flex-direction: column;
 			align-items: start;
+			flex-wrap: nowrap; */
+			display: block;
 			.email-input{ 
-				flex-basis: auto; 
+				flex-basis: 100%; 
 				width: 80%; 
 				height: 50px; 
 				padding-left: 15px; 
-				margin-bottom: 20px;
+				margin-bottom: 20px; 
 			} 
 			.subscribe-button{ 
-				flex-basis: auto; 
+				flex-basis: 100%; 
 				width: 80%;
 				height: 50px; 
+			}
+			.subscribeToNews{
+				flex-basis: 100%;
 			}
 		}
 	}
 }
 
 @media (max-width: 425px) {
+	.footer .footer-content {
+		height: 450px;
+	}
 	.footer .footer-form {
 		.email-input{ width: 100%; }
 		.subscribe-button { width: 100%; }

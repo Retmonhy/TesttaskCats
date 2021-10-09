@@ -7,7 +7,7 @@ $('.like-btn', '.cat-block').on('click', function(){
 	/*создадим элемент, который будем вставлять в favorti-notice*/
 	let newCat = document.createElement('p');
 	newCat.className = 'cat__nameHere';
-	newCat.innerHTML = `${name}`;
+	newCat.innerHTML = name;
 
 	
 
@@ -17,13 +17,13 @@ $('.like-btn', '.cat-block').on('click', function(){
 	} else {
 		favoritNotice(newCat);
 		showNotice();
-		setTimeout(() => {
-			hideNotice()
+		setTimeout(function() { 
+			hideNotice()		
 		}, 2000);
 	}
 });	
 
-$('.favorit-notice').on('click', () => {
+$('.favorit-notice').on('click', function () {
 
 });
 
@@ -33,8 +33,9 @@ function favoritNotice(catName) {
 	
 	tret.append(catName);
 
-	setTimeout(() => {
-		catName.remove();
+	setTimeout(function () {
+		catName.parentNode.removeChild(catName);
+		// catName.remove();
 	}, 2100);
 
 };
@@ -49,7 +50,7 @@ function hideNotice() {
 
 
 /*скрипт на кнопочку возврата к шапке*/
-$('.scrollTop-button').on('click', () => {
+$('.scrollTop-button').on('click', function () {
 	$('html, body').animate({
 		scrollTop: 0
 	}, 1000);
@@ -82,10 +83,10 @@ document.querySelector('.sort__age').addEventListener("click", function(event) {
 
 function checkSortClass(sort_button, sortClass, dataAttribute) {
 	if (sort_button.classList.contains('sort_decrease')) {
-		mySortIncrease(`${dataAttribute}`);
+		mySortIncrease(dataAttribute);//////////////////////////////////////////////
 		$('.' + sortClass).removeClass('sort_decrease').addClass('sort_increase');
 	}	else {
-		mySortDecrease(`${dataAttribute}`);
+		mySortDecrease(dataAttribute);//////////////////////////////////////////////
 		$('.' + sortClass).addClass('sort_decrease').removeClass('sort_increase');
 
 	}
@@ -95,7 +96,7 @@ function mySortDecrease(dataAttribute) {
 
 	for (let i = 0; i < catsShop.children.length; i++) {
 		for (let j = i; j < catsShop.children.length; j++){
-			if (+catsShop.children[i].getAttribute(`${dataAttribute}`) < +catsShop.children[j].getAttribute(`${dataAttribute}`)) {
+			if (+catsShop.children[i].getAttribute(dataAttribute) < +catsShop.children[j].getAttribute(dataAttribute)) {////////////
 				replacedNode = catsShop.replaceChild(catsShop.children[j], catsShop.children[i]);
 				insertAfter(replacedNode, catsShop.children[i]);
 
@@ -108,7 +109,7 @@ function mySortIncrease(dataAttribute) {
 
 	for (let i = 0; i < catsShop.children.length; i++) {
 		for (let j = i; j < catsShop.children.length; j++){
-			if (+catsShop.children[i].getAttribute(`${dataAttribute}`) > +catsShop.children[j].getAttribute(`${dataAttribute}`)) {
+			if (+catsShop.children[i].getAttribute(dataAttribute) > +catsShop.children[j].getAttribute(dataAttribute)) {///////////////
 				replacedNode = catsShop.replaceChild(catsShop.children[j], catsShop.children[i]);
 				insertAfter(replacedNode, catsShop.children[i]);
 
